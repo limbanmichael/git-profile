@@ -1,0 +1,31 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr {
+    cursor: pointer;
+}
+
+tr:hover, .userId:hover {
+    background-color: #dddddd;
+}
+
+tr td {
+    text-align: center;
+  /* background-color: #dddddd; */
+}
+
+.userId {
+    /* background: #FFFFFF; */
+    color: #0082D6;
+    font-size: 1.5rem;
+    font-weight: 700;
+}

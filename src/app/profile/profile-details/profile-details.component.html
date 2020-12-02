@@ -1,0 +1,18 @@
+<div class="details-container">
+    <div class="modal-content">
+        <div class="header">
+            <span class="close" (click)="close()">&times;</span>
+        </div>
+        <div class="main">
+            <div class="avatar">
+                <img [src]="profileDetails.avatar_url" />
+            </div>
+            <div class="info">
+                <p class="name">{{profileDetails.name}}</p>
+                <p class="info-item">{{profileDetails.location}}</p>
+                <p class="info-item">{{'Followers : ' + profileDetails.followers}}</p>
+            </div>
+        </div>
+        
+    </div>
+</div>

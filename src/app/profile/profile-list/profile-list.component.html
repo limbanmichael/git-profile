@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Type</th>
+    </tr>
+    <tr 
+    (click)="getProfileDetails(item.id)"
+    *ngFor="let item of profile; let i = index">
+        <td class="userId">{{ item.id }}</td>
+        <td>{{ item.login }}</td>
+        <td>{{ item.type }}</td>
+    </tr>
+</table>
+
+<app-profile-details 
+    *ngIf="!hideDetails"
+    (closeModal)="closeModal()"
+    [profileDetails]="profileDetails"
+>
+</app-profile-details>
